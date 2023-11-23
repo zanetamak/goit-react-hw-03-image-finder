@@ -28,10 +28,12 @@ onSubmit = e => {
   e.preventDefault();
   const query = e.target.search.value;
 
+
   this.setState({
     query, // Aktualizacja stanu query na wartość, która została pobrana z formularza 
     isLoading: true,
     images: [],
+    page: 1, // ustawienie strony znowu na 1.
   });
 
   this.fetchGallery(query, this.state.page); // wywolanie funkcji
