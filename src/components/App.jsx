@@ -36,7 +36,7 @@ onSubmit = e => {
     page: 1, // ustawienie strony znowu na 1.
   });
 
-  this.fetchGallery(query, this.state.page); // wywolanie funkcji
+  this.fetchGallery(query, 1); // wywolanie funkcji
 };
 
 onNextPage = () => { // wywoływana po naciśnięciu Load More
